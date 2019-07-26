@@ -37,8 +37,7 @@ J'essayerais de partager des idées, des notes, des Cmdlets à toute fin utiles
 
 ### Azure & LOG/Trace
 
-
 ### Azure & Backup & DR
 
-###Azure & DEVOPS
+### Azure & DEVOPS
 
