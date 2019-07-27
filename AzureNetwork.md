@@ -35,7 +35,7 @@
 - reduces the potential for misconfiguration and exposure.
 - The role of each spoke can be to host different types of workloads
 
-## Subscription limits and multiple hubs
+## Subscription limits and multiple hubs 
 - https://docs.microsoft.com/en-us/azure/azure-subscription-service-limits
 - The architecture can scale up further by extending the model from a single hub-spokes to a cluster of hub and spokes
 - Multiple hubs in one or more Azure regions can be interconnected using VNet Peering, ExpressRoute, Virtual WAN, or site-to-site VPN.
@@ -51,6 +51,12 @@ Notes :  one of the core principles of the VDC concept is repeatability and simp
 	- 	Workloads,
 	- 	Monitoring.
 
-
+	Notes : As good practice in general, access rights and privileges should be group-based
+	Notes : Naming is Important (example : AuthServiceNetOps, AuthServiceSecOps, AuthServiceDevOps, and AuthServiceInfraOps)
+	Notes : https://docs.microsoft.com/en-us/azure/role-based-access-control/built-in-roles
+	Notes : The VDC is designed so that groups created for the central IT group, managing the hub, have corresponding groups at the workload level. 
+	Notes : LOBs ==>  Lines-of-Business 
+	
+	## Component type: Infrastructure
 
 
