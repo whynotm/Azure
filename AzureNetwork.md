@@ -12,4 +12,20 @@ The key to unlock the advantages of VDC is a centralized hub and spoke network t
 1.Identity and directory service :
   - key aspect of all datacenters
   - The goals of this process should be to increase security and productivity while decreasing cost, downtime, and repetitive manual tasks.
-2. 
+  - Notes : Azure Active Directory is a comprehensive, highly available identity and access management cloud solution that combines core directory services, advanced identity governance, and application access management
+2. Security infrastructure
+ - segregation of traffic in a VDC implementation's specific virtual network segment.
+ - VNet isolation, access control lists (ACLs), load balancers, IP filters, and traffic flow policies.
+ - (NAT) separates internal network traffic from external traffic.
+ Notes : Azure Fabric  And  Azyre Hypervisor
+3. Connectivity to the cloud
+  -  Internet, but also to on-premises networks and datacenters.
+  - Azure Firwall  OR  VNA 
+  - User Defined routes
+  - NSG
+  -  Azure Site-to-Site VPN  && Azure Virtual WAN (Dashbords) && Express Route
+  Notes : DDOS
+  4. Connectivity within the cloud
+    - VNET
+    - VNET Peering (same Azure region or even across regions)
+    - 
