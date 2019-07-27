@@ -19,6 +19,7 @@ J'essayerais de partager des idées, des notes, des Cmdlets à toute fin utiles
 
 
 ### [Azure Network](./AzureNetwork.md) 
+Lien de réference : https://docs.microsoft.com/en-us/azure/architecture/vdc/networking-virtual-datacenter
 
 
 ### Azure & IAAS
