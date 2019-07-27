@@ -59,4 +59,17 @@ Notes :  one of the core principles of the VDC concept is repeatability and simp
 	
 	## Component type: Infrastructure
 
-
+		-	This component type is where most of the supporting infrastructure resides
+		-	where your centralized IT, Security, and/or Compliance teams spend most of their time.
+		-	Private IP address space assigned to a VDC implementation must be consistent and NOT overlapping with private IP addresses assigned on your on-premises networks. : using NAT to handle IP concerns is not a recommended solution
+		
+	### Infrastructure functionality :
+		- 	Identity and directory services : list of users, but also the access rights to resources in a specific Azure subscription.
+		-	Virtual Network : VMs (and PaaS services) in one virtual network cannot communicate directly to VMs (and PaaS services) in a different virtual network ==> Isolation
+		-	UDR User-defined routes : guarantees that egress traffic from the spoke transit through specific custom VMs or network virtual appliances and load balancers present in both the hub and the spokes.
+		-	NSG Network security groups :  The network security group can be applied to a subnet, a Virtual NIC card associated with an Azure VM, or both.
+			Notes : Customers should apply additional per-VM filters with host-based firewalls such as IPtables or the Windows Firewall.
+		-	DNS : Private and Public 
+			-- Private zones provide name resolution both within a virtual network and across virtual networks
+			-- For public resolution, Azure DNS provides a hosting service for DNS domains, providing name resolution using Microsoft Azure infrastructure.
+		
