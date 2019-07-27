@@ -56,14 +56,15 @@ Notes :  one of the core principles of the VDC concept is repeatability and simp
 	Notes : https://docs.microsoft.com/en-us/azure/role-based-access-control/built-in-roles
 	Notes : The VDC is designed so that groups created for the central IT group, managing the hub, have corresponding groups at the workload level. 
 	Notes : LOBs ==>  Lines-of-Business 
-	
-	## Component type: Infrastructure
+
+
+## Component type: Infrastructure
 
 		-	This component type is where most of the supporting infrastructure resides
 		-	where your centralized IT, Security, and/or Compliance teams spend most of their time.
 		-	Private IP address space assigned to a VDC implementation must be consistent and NOT overlapping with private IP addresses assigned on your on-premises networks. : using NAT to handle IP concerns is not a recommended solution
 		
-	### Infrastructure functionality :
+### Infrastructure functionality :
 		- 	Identity and directory services : list of users, but also the access rights to resources in a specific Azure subscription.
 		-	Virtual Network : VMs (and PaaS services) in one virtual network cannot communicate directly to VMs (and PaaS services) in a different virtual network ==> Isolation
 		-	UDR User-defined routes : guarantees that egress traffic from the spoke transit through specific custom VMs or network virtual appliances and load balancers present in both the hub and the spokes.
