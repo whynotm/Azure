@@ -46,6 +46,11 @@ Notes :  An architecture with two levels of hubs introduces complex routing that
 Notes :  one of the core principles of the VDC concept is repeatability and simplicity
 
 # Components
+	##The virtual datacenter is made up of four basic component types: 
+	-	Infrastructure,
+	-	Perimeter Networks,
+	- 	Workloads,
+	- 	Monitoring.
 
 
 
