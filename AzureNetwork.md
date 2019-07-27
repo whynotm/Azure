@@ -81,9 +81,56 @@ Notes :  one of the core principles of the VDC concept is repeatability and simp
 		### Features
 				-  Virtual networks, user-defined routes, and network security groups
 				-	Network virtual appliances
-				-	Azure Load Balancer
-				-	Azure Application Gateway with web application firewall (WAF)
+				-	Azure Load Balancer : offers a high availability Layer 4 (TCP, UDP) service
+				-	Azure Application Gateway with web application firewall (WAF) : application delivery controller (ADC) as a service, offering various layer 7 load-balancing capabilities for your application.*
+					-	Application Gateway can be configured as internet facing gateway, internal only gateway, or a combination of both.
 				-	Public IPs
-				-	Azure Front Door with web application firewall (WAF)
+				-	Azure Front Door with web application firewall (WAF) :
+					-	AFD is Microsoft's highly available and scalable Web Application Acceleration Platform,Global HTTP Load Balancer, Application Protection, and Content Delivery Networ
+					-	
 				-	Azure Firewall
+				Notes : Using only one set of firewalls for both is a security risk
+				Notes : sing separate firewall layers reduces the complexity of checking security rules ( One dedicated to Internet, Another For on promise traffic)
+				
+				-	Azure DDos Protection Standard
+					Notes : Protection is provided for IPv4 Azure public IP addresses.
 
+## Component type: Monitoring
+		### Features
+			-	Azure Monitor : Azure Activity Log, Azure Monitor diagnostic logs , Azure Network Watcher ,  Network Performance Monitor (End to End)
+					-	a comprehensive solution for collecting, analyzing, and acting on telemetry from your application and the Azure resources that support them
+					-	They can also work to monitor critical on-premises resources in order to provide a hybrid monitoring environment
+					-	All logs can be stored in Azure storage accounts for audit, static analysis, or backup purposes.
+					-	Log Analytics is implemented as a cloud-based service. (Can be integrated with SCOM)
+			Notes : NSG , Event Logs and Counter Logs
+
+			##Azure Network Watcher 
+							Monitor communication between a virtual machine and an endpoint.
+    						View resources in a virtual network and their relationships.
+    						Diagnose network traffic filtering problems to or from a VM.
+    						Diagnose network routing problems from a VM.
+    						Diagnose outbound connections from a VM.
+    						Capture packets to and from a VM.
+    						Diagnose problems with an Azure virtual network gateway and connections.
+    						Determine relative latencies between Azure regions and internet service providers.
+    						View security rules for a network interface.
+    						View network metrics.
+    						Analyze traffic to or from a network security group.
+    						View diagnostic logs for network resources.
+
+## Component type: Workloads
+	-	Internal LOB Applications
+	-	Customer facing web sites (Internet or Internal facing)
+	Notes : web app can inetrgrate with Vnet that allow  deployement in spoke network zone
+	-	Big Data/Analytics : HDInsight can be deployed to cluster in a spoke of the VDC
+	-	Events and Messaging :Azure Event Hubs, Azure service Bus (FIFO)
+	
+# Making the VDC highly available: multiple VDCs
+	## Regional/global presence
+	## Disaster recovery
+		-	 Two VDC implementations in different regions can be connected through:
+			-	VNet Peering - VNet Peering can connect hubs across regions.
+    		-	ExpressRoute private peering when the hubs in each VDC implementation are connected to the same ExpressRoute circuit.
+    		-	Multiple ExpressRoute circuits connected via your corporate backbone and your multiple VDC implementations connected to the ExpressRoute circuits.
+    		-	Site-to-Site VPN connections between the hub zone of your VDC implementations in each Azure Region.
+	## diverting traffic from one region to another : Azure Traffic Manager 
