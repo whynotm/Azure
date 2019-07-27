@@ -72,5 +72,18 @@ Notes :  one of the core principles of the VDC concept is repeatability and simp
 			Notes : Customers should apply additional per-VM filters with host-based firewalls such as IPtables or the Windows Firewall.
 		-	DNS : Private and Public 
 			-- Private zones provide name resolution both within a virtual network and across virtual networks
-			-- For public resolution, Azure DNS provides a hosting service for DNS domains, providing name resolution using Microsoft Azure infrastructure.
+			-- For public resolution, Azure DNS provides a hosting service for DNS domains, providing name resolution using Microsoft Azure infrastructure.		
+		-	Subscription and Resource Group Management:
+		-	RBAC : RBAC allows inheritance of permissions
+		-	Vnet Peering : a mechanism that connects two virtual networks (VNets): through the Azure datacenter network 'in the same region'   OR  Azure world-wide backbone across regions
 		
+## Component Type: Perimeter Networks		
+		### Features
+				-  Virtual networks, user-defined routes, and network security groups
+				-	Network virtual appliances
+				-	Azure Load Balancer
+				-	Azure Application Gateway with web application firewall (WAF)
+				-	Public IPs
+				-	Azure Front Door with web application firewall (WAF)
+				-	Azure Firewall
+
