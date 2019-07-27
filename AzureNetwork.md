@@ -1,5 +1,3 @@
-Lien de réference : https://docs.microsoft.com/en-us/azure/architecture/vdc/networking-virtual-datacenter
-
 # :sunny: VDC vs Network
 The key to unlock the advantages of VDC is a centralized hub and spoke network topology with a mix of Azure services and features:
 
