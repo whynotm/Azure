@@ -34,5 +34,19 @@ The key to unlock the advantages of VDC is a centralized hub and spoke network t
 - Hub and spoke is a model for designing the network topology for a virtual datacenter implementation.
 - A hub is the central network zone that controls and inspects ingress or egress traffic between different zones: internet, on-premises, and the spokes
 - reduces the potential for misconfiguration and exposure.
+- The role of each spoke can be to host different types of workloads
 
-## 
+## Subscription limits and multiple hubs
+- https://docs.microsoft.com/en-us/azure/azure-subscription-service-limits
+- The architecture can scale up further by extending the model from a single hub-spokes to a cluster of hub and spokes
+- Multiple hubs in one or more Azure regions can be interconnected using VNet Peering, ExpressRoute, Virtual WAN, or site-to-site VPN.
+- Peering : spokes can connect to other spokes in the same hub or different hubs ==> avoid transiting through the hub, Security !
+Notes :  increases the cost and management effort of the system. 
+Notes :  An architecture with two levels of hubs introduces complex routing that removes the benefits of a simple hub-spoke relationship.
+Notes :  one of the core principles of the VDC concept is repeatability and simplicity
+
+# Components
+
+
+
+
