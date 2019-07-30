@@ -27,7 +27,8 @@ Lien de réference : https://docs.microsoft.com/en-us/azure/architecture/vdc/net
 
 ### Azure & IAAS
 
-### Azure & Storage
+### [Azure & Storage](./AzureStorage.md)
+
 
 ### Azure & Security
 
