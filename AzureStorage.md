@@ -7,8 +7,23 @@ https://docs.microsoft.com/fr-fr/learn/modules/create-azure-storage-account/2-de
 
 ## 
 
-## 
+##  BLOB
+- Block blobs :  are used to hold text or binary files up to ~5 TB (50,000 blocks of 100 MB) in size
+- Pages Blobs : They are named page blobs because they provide random read/write access to 512-byte pages.
+- Append blobs are made up of blocks like block blobs, but they are optimized for append operations ; A single append blob can be up to 195 GB.
 
+
+## FILES
+Azure Files enables you to set up highly available network file shares that can be accessed by using the standard Server Message Block (SMB) protocol. 
+
+
+## Queues 
+- The Azure Queue service is used to store and retrieve messages.
+- Queue messages can be up to 64 KB in size, and a queue can contain millions of messages. 
+- Queues are generally used to store lists of messages to be processed asynchronously. 
+ 
+## Azure storage accounts
+- To access any of these services from an application, you have to create a storage account
 
 
 
@@ -23,4 +38,5 @@ Il s’agit du stockage localement redondant (LRS) qui vous protège contre les 
 - All data written to Azure Storage is encrypted by the service.
 - A single Azure subscription can host up to 200 storage accounts, each of which can hold 500 TB of data
 - Tables: A NoSQL store for schemaless storage of structured data. This service has been replaced by Azure Cosmos DB and will not be discussed here.
-- 
+-  For example, cool storage and archive storage are not supported in GPv1
+
