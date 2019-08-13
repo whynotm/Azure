@@ -25,9 +25,12 @@ Azure Files enables you to set up highly available network file shares that can 
 ## Azure storage accounts
 - To access any of these services from an application, you have to create a storage account
 
-## Storage and key access
+## Storage and key 
+	### Key access
 
 	- Key Vaults include support to synchronize directly to the Storage Account and automatically rotate the keys periodically. 
+
+
 	- The REST endpoint is a combination of your storage account name, the data type, and a known domain. For example:
 				-	Data type	Example endpoint
 				-	Blobs	https://[name].blob.core.windows.net/
@@ -35,6 +38,8 @@ Azure Files enables you to set up highly available network file shares that can 
 				-	Table	https://[name].table.core.windows.net/
 				-	Files	https://[name].file.core.windows.net/
 
+	###   shared access
+	shared access signatures that support expiration and limited permissions for scenarios where you need to grant limited access. 
 
 ## Notes
 
