@@ -46,3 +46,5 @@ Lien de réference : https://docs.microsoft.com/en-us/azure/architecture/vdc/net
 
 ### Azure & DEVOPS
 
+### [Azure & TemplateSample Scale Set Virtual Machine](./SSVM_Sample.md)
+
