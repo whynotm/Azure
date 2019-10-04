@@ -29,6 +29,7 @@ Lien de réference : https://docs.microsoft.com/en-us/azure/architecture/vdc/net
 
 ### [Azure & Storage](./AzureStorage.md)
 
+### [Azure & Azure AD ADMIN CUSTOM ROLE](./AZUREADCUSTOMROLE.md)
 
 ### Azure & Security
 
