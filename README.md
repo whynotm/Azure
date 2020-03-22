@@ -20,7 +20,7 @@ J'essayerais de partager des idées, des notes, des Cmdlets à toute fin utiles
 
 Architectures de references
 
-### [IOT Architectures de references](./Azure Reference Architectures/IOT References Architecture.md)
+### [IOT Architectures de references](./Azure-Reference-Architectures/IOT-References-Architecture.md)
 
 
 
