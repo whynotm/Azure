@@ -1,9 +1,13 @@
-Ayoub how are you ?
-that's for you ;)
-enjoy your self !!!
+
 # Azure
 Azure Notes
 Step by Step to Get certified, more important to well understaund MS Azure
+
+# AYOUB
+Ayoub how are you ?
+that's for you ;)
+enjoy your self !!!
+# End Ayoub
 get staretd :
 1. https://docs.microsoft.com/en-us/learn/paths/azure-fundamentals/
 2. https://docs.microsoft.com/en-us/learn/paths/architect-great-solutions-in-azure/
