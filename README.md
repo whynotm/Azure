@@ -1,3 +1,6 @@
+Ayoub how are you ?
+that's for you ;)
+enjoy your self !!!
 # Azure
 Azure Notes
 Step by Step to Get certified, more important to well understaund MS Azure
